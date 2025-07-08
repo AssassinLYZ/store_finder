@@ -1,0 +1,86 @@
+@use 'variables' as *;
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  font-family: var(--font-family-primary);
+  font-size: var(--font-size-base);
+  line-height: var(--line-height-normal);
+  color: var(--color-dark);
+  background-color: var(--color-background);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  font-family: 'JumboTheSans', sans-serif;
+  min-height: 100vh;
+  background-color: var(--color-background);
+}
+
+// // Typography
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  font-weight: var(--font-weight-medium);
+  line-height: var(--line-height-tight);
+  color: var(--color-dark);
+}
+
+h1 {
+  font-family: 'JumboTheSans-bold', sans-serif;
+  font-weight: 900;
+  font-size: var(--font-size-4xl);
+}
+
+h2 {
+  font-size: var(--font-size-3xl);
+}
+
+h3 {
+  font-size: var(--font-size-2xl);
+}
+
+h4 {
+  font-size: var(--font-size-xl);
+}
+
+h5 {
+  font-size: var(--font-size-lg);
+}
+
+h6 {
+  font-size: var(--font-size-base);
+}
+
+p {
+  color: var(--color-dark);
+}
+
+button {
+  font-family: 'JumboTheSans-bold', sans-serif;
+  background-color: var(--color-white);
+  border: var(--button-border);
+  border-color: var(--color-gray-600);
+  color: var(--color-dark);
+  padding: 0.5rem;
+  border-radius: 2rem;
+  font-weight: var(--font-weight-semibold);
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  &:hover {
+    color: var(--color-white);
+    background-color: var(--color-dark);
+  }
+}

@@ -1,0 +1,102 @@
+{
+  "common": {
+    "search": "Search",
+    "loading": "Loading...",
+    "error": "An error occurred",
+    "retry": "Retry",
+    "close": "Close",
+    "open": "Open",
+    "closed": "Closed",
+    "viewDetails": "View Details",
+    "website": "Website",
+    "directions": "Directions",
+    "distance": "Distance",
+    "changeLanguage": "Change Language"
+  },
+  "search": {
+    "placeholder": "Which groceries are you looking for?",
+    "storeSearch": "Search stores...",
+    "useMyLocation": "Use my location",
+    "suggestions": "Suggestions",
+    "noResults": "No stores found",
+    "resultsFound": "{count} stores found",
+    "clear": "Clear search",
+    "noSuggestions": "No suggestions found",
+    "storeCount": "{count} stores",
+    "city": "city",
+    "store": "store",
+    "street": "street"
+  },
+  "store": {
+    "openUntil": "Open until {time}",
+    "closedUntil": "Closed until {time}",
+    "opensAt": "Opens at {time}",
+    "openNow": "Open now",
+    "closedNow": "Closed now",
+    "tomorrow": "Tomorrow",
+    "today": "Today",
+    "facilities": "Facilities",
+    "services": "Services",
+    "openingHours": "Opening Hours",
+    "address": "Address",
+    "openTill": "until {time}",
+    "opensToday": "Opens at {time}",
+    "closed": "Closed",
+    "nowOpen": "Open now",
+    "until": "until",
+    "nextOpen": "Next open",
+    "location": "Location",
+    "information": "Information",
+    "viewDetails": "View Details",
+    "selectCity": "Find a Jumbo in"
+  },
+  "facilities": {
+    "cookingStudio": "Cooking Studio",
+    "dryCleaning": "Dry Cleaning",
+    "flowers": "Flowers",
+    "kitchen": "Kitchen",
+    "liquorService": "Liquor Service",
+    "parking": "Parking",
+    "pharmacy": "Pharmacy",
+    "photoService": "Photo Service",
+    "postOffice": "Post Office",
+    "selfCheckout": "Self Checkout",
+    "selfScan": "Self Scan",
+    "wifi": "WiFi",
+    "free": "Free",
+    "paid": "Paid"
+  },
+  "commerce": {
+    "inStore": "In-Store Shopping",
+    "homeDelivery": "Home Delivery",
+    "collection": "Click & Collect",
+    "available": "Available",
+    "notAvailable": "Not Available"
+  },
+  "days": {
+    "monday": "Monday",
+    "tuesday": "Tuesday",
+    "wednesday": "Wednesday",
+    "thursday": "Thursday",
+    "friday": "Friday",
+    "saturday": "Saturday",
+    "sunday": "Sunday"
+  },
+  "pagination": {
+    "previous": "Previous",
+    "next": "Next"
+  },
+  "cities": {
+    "findJumboIn": "Find a Jumbo in",
+    "storeCount": "{count} stores"
+  },
+  "homepage": {
+    "title": "Shops & opening hours",
+    "subtitle": "Welcome to Jumbo Store Finder - Find your nearest Jumbo supermarket!",
+    "visitStore": "Visit Store",
+    "freeParking": "Free Parking"
+  },
+  "footer": {
+    "copyright": "© Jumbo Supermarket Store Finder"
+  }
+}

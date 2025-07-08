@@ -1,0 +1,102 @@
+{
+  "common": {
+    "search": "Zoeken",
+    "loading": "Laden...",
+    "error": "Er is een fout opgetreden",
+    "retry": "Opnieuw proberen",
+    "close": "Sluiten",
+    "open": "Open",
+    "closed": "Gesloten",
+    "viewDetails": "Details bekijken",
+    "website": "Website",
+    "directions": "Routebeschrijving",
+    "distance": "Afstand",
+    "changeLanguage": "Taal wijzigen"
+  },
+  "search": {
+    "placeholder": "Welke boodschappen zoek je?",
+    "storeSearch": "Zoek winkels...",
+    "useMyLocation": "Gebruik mijn locatie",
+    "suggestions": "Suggesties",
+    "noResults": "Geen winkels gevonden",
+    "resultsFound": "{count} winkels gevonden",
+    "clear": "Zoekopdracht wissen",
+    "noSuggestions": "Geen suggesties gevonden",
+    "storeCount": "{count} winkels",
+    "city": "stad",
+    "store": "winkel",
+    "street": "straat"
+  },
+  "store": {
+    "openUntil": "Open tot {time}",
+    "closedUntil": "Gesloten tot {time}",
+    "opensAt": "Opent om {time}",
+    "openNow": "Nu open",
+    "closedNow": "Nu gesloten",
+    "tomorrow": "Morgen",
+    "today": "Vandaag",
+    "facilities": "Faciliteiten",
+    "services": "Diensten",
+    "openingHours": "Openingstijden",
+    "address": "Adres",
+    "openTill": "tot {time}",
+    "opensToday": "Opent om {time}",
+    "closed": "Gesloten",
+    "nowOpen": "Nu open",
+    "until": "tot",
+    "nextOpen": "Volgende geopend",
+    "location": "Locatie",
+    "information": "Informatie",
+    "viewDetails": "Bekijk details",
+    "selectCity": "Zoek een Jumbo in"
+  },
+  "facilities": {
+    "cookingStudio": "Kookstudio",
+    "dryCleaning": "Stomerij",
+    "flowers": "Bloemen",
+    "kitchen": "Keuken",
+    "liquorService": "Slijterij",
+    "parking": "Parkeren",
+    "pharmacy": "Apotheek",
+    "photoService": "Fotoservice",
+    "postOffice": "Postkantoor",
+    "selfCheckout": "Zelfscankassa",
+    "selfScan": "Zelfscan",
+    "wifi": "WiFi",
+    "free": "Gratis",
+    "paid": "Betaald"
+  },
+  "commerce": {
+    "inStore": "Winkelen in de winkel",
+    "homeDelivery": "Thuisbezorging",
+    "collection": "Afhalen",
+    "available": "Beschikbaar",
+    "notAvailable": "Niet beschikbaar"
+  },
+  "days": {
+    "monday": "Maandag",
+    "tuesday": "Dinsdag",
+    "wednesday": "Woensdag",
+    "thursday": "Donderdag",
+    "friday": "Vrijdag",
+    "saturday": "Zaterdag",
+    "sunday": "Zondag"
+  },
+  "pagination": {
+    "previous": "Vorige",
+    "next": "Volgende"
+  },
+  "cities": {
+    "findJumboIn": "Zoek een Jumbo in",
+    "storeCount": "{count} winkels"
+  },
+  "homepage": {
+    "title": "Winkels & openingstijden",
+    "subtitle": "Welkom bij Jumbo Winkel Zoeker - Vind je dichtstbijzijnde Jumbo supermarkt!",
+    "visitStore": "Bezoek Winkel",
+    "freeParking": "Gratis Parkeren"
+  },
+  "footer": {
+    "copyright": "© Jumbo Supermarkt Winkel Zoeker"
+  }
+}
