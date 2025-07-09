@@ -35,7 +35,7 @@ npm install
 # Set up environment variables
 cp .env.example .env
 # Add your Google Maps API key to .env
-GOOGLE_MAPS_API_KEY=your_api_key_here
+NUXT_GOOGLE_MAPS_API_KEY=your_api_key_here
 ```
 
 ## 🚀 Development
@@ -139,7 +139,7 @@ Language switching is available through the language switcher in the header.
 
 ### Environment Variables
 
-- `GOOGLE_MAPS_API_KEY` - Google Maps API key for map functionality
+- `NUXT_GOOGLE_MAPS_API_KEY` - Google Maps API key for map functionality
 
 ### Nuxt Configuration
 

@@ -1,4 +1,6 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
+import { mkdirSync, existsSync, copyFileSync, readdirSync, statSync } from 'fs';
+import { join } from 'path';
 
 export default defineNuxtConfig({
   devServer: {
@@ -13,8 +15,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      googleMapsApiKey: process.env.GOOGLE_MAPS_API_KEY,
-      graphqlUrl: process.env.NODE_ENV === 'development' ? 'http://localhost:3002/api/graphql' : 'http://localhost:3000/api/graphql'
+      googleMapsApiKey: process.env.NUXT_GOOGLE_MAPS_API_KEY,
+      apiUrl: process.env.NUXT_GRAPHQL_BASE,
     },
   },
   nitro: {
@@ -22,14 +24,18 @@ export default defineNuxtConfig({
       routes: ['/en', '/nl'],
       ignore: ['/'],
     },
-    publicAssets: [
-      { dir: 'server/data', baseURL: '/data' }
-    ],
+
     // Ensure data files are copied to the build output
     storage: {
       'data': {
         driver: 'fs',
-        base: './server/data'
+        base: 'server/assets/data'
+      }
+    },
+    hooks: {
+      async compiled() {
+        copyDir('server/assets/data', '.output/server/assets/data');
+        console.log('✅ Copied data files to .output/server/assets/data');
       }
     }
   },
@@ -52,4 +58,19 @@ export default defineNuxtConfig({
   },
 });
 
+function copyDir(src: string, dest: string) {
+  if (!existsSync(dest)) {
+    mkdirSync(dest, { recursive: true });
+  }
+
+  for (const file of readdirSync(src)) {
+    const srcPath = join(src, file);
+    const destPath = join(dest, file);
+    if (statSync(srcPath).isDirectory()) {
+      copyDir(srcPath, destPath);
+    } else {
+      copyFileSync(srcPath, destPath);
+    }
+  }
+}
 
