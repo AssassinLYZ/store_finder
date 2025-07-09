@@ -22,6 +22,7 @@
   const storeStore = useStoreStore();
   const selectCity = (cityName: string) => {
     storeStore.filterByCity(cityName);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   };
 </script>
 <style scoped>

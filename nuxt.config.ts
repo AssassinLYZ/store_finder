@@ -1,6 +1,8 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 import { mkdirSync, existsSync, copyFileSync, readdirSync, statSync } from 'fs';
 import { join } from 'path';
+import { config } from 'dotenv';
+config({ path: `.env.${process.env.NODE_ENV}` });
 
 export default defineNuxtConfig({
   devServer: {
@@ -15,8 +17,8 @@ export default defineNuxtConfig({
   },
   runtimeConfig: {
     public: {
-      googleMapsApiKey: process.env.NUXT_GOOGLE_MAPS_API_KEY,
-      apiUrl: process.env.NUXT_GRAPHQL_BASE,
+      googleMapsApiKey: process.env.NUXT_PUBLIC_GOOGLE_MAPS_API_KEY,
+      apiUrl: process.env.NUXT_PUBLIC_GRAPHQL_BASE,
     },
   },
   nitro: {
@@ -62,6 +64,7 @@ function copyDir(src: string, dest: string) {
   if (!existsSync(dest)) {
     mkdirSync(dest, { recursive: true });
   }
+  console.log(process.env.NODE_ENV);
 
   for (const file of readdirSync(src)) {
     const srcPath = join(src, file);

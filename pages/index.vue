@@ -34,6 +34,7 @@
 
   function onChangePage(newPage: number) {
     storeStore.changeCurrentPage(newPage);
+    window.scrollTo({ top: 0, behavior: 'smooth' });
   }
 
   const selectedStore = ref<Store | null>(null);
